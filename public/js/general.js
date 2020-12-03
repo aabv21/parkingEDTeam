@@ -3,5 +3,5 @@ $(() => {
   $('.modal').modal();
 
   firebase.initializeApp(firebaseConfig);
-
+  firebase.analytics();
 })

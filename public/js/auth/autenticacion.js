@@ -29,13 +29,11 @@ class Autenticacion {
       });
 
       const configuracion = {
-        url: 'https://parkingedteam.firebaseapp.com/'
+        url: 'https://aabvproy1.firebaseapp.com/'
       }
 
       await result.user.sendEmailVerification(configuracion);
-
       await firebase.auth().signOut();
-
       return true;
 
     } catch (error) {
